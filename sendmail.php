@@ -3,9 +3,9 @@
 function sendMail($emailto, $emailsubject, $emailmessage) {
 
 	// Compose the email
-	ini_set("sendmail_from", "form.system@seatrade-global.com"); 
+	ini_set("sendmail_from", "system@website.com"); 
 	
-	mail($email_to, $email_subject, $email_message, $headers, "-fform.system@seatrade-global.com"); 
+	mail($email_to, $email_subject, $email_message, $headers, "-fsystem@website.com"); 
 	
 	$to = $emailto;
 	$subject = $emailsubject;
@@ -15,7 +15,7 @@ function sendMail($emailto, $emailsubject, $emailmessage) {
 
 	$message .= '</body></html>';
 	
-	$from = "form.system@seatrade-global.com";
+	$from = "system@website.com";
 	
 	$headers = "From: " . $from . "\r\n";
 	
